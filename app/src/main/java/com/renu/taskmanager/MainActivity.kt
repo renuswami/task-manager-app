@@ -50,21 +50,18 @@ fun Greeting(massage1: String, massages2: String, modifier: Modifier = Modifier)
     ) {
 
         Column(
-            verticalArrangement = Arrangement.Center ,
-            horizontalAlignment =  Alignment.CenterHorizontally
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-        Image(
-            painter = image,
-            contentDescription = null,
-
-        )
-
-
+            Image(
+                painter = image,
+                contentDescription = null,
+            )
             Text(
                 text = massage1,
                 fontWeight = FontWeight.Bold,
                 lineHeight = 116.sp,
-                        modifier = modifier
+                modifier = modifier
                     .padding(
                         top = 24.dp,
                         bottom = 8.dp
